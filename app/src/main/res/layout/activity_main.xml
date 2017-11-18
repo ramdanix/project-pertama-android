@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ramdanix.projectpertama.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/img_foto"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/foto"/>
+
+        <LinearLayout
+            android:id="@+id/detail_text"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/img_foto"
+            >
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rino Tawalata"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                />
+
+            <TextView
+                android:id="@+id/tv_dev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer Android"
+                android:textSize="10sp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/ed_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
